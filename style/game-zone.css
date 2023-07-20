@@ -206,6 +206,60 @@ span{
 .video-card p {
   width: 342px;
 }
+/* play instantly style  */
+
+.play-container {
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.play-container h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.play-container p {
+  color: #534c64;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.play-text-style {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-img-1 {
+  width: 634.833px;
+  height: 650px;
+  border-radius: 8px;
+}
+.play-img-2 {
+  width: 318.5px;
+  height: 365.083px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  position: absolute;
+  right: 600px;
+  bottom: -40px;
+}
+
+.game-right {
+  width: 470px;
+}
+/* img section */
+
+
 
 
 
@@ -231,7 +285,10 @@ span{
 
 @media screen and (max-width:576px) {
   nav,
-  .header-container{
+  .header-container,
+  .know-more-btn,
+  .card-container,
+  .play-container{
     flex-direction: column;
   }
   .nav-about{

@@ -3,19 +3,30 @@
 
  * {
   font-family: 'Work Sans', sans-serif;
-  margin: 0;
-  padding: 0;
  }
  body{
   max-width: 1440px;
   margin: 0 auto;
  }
+ /* share btn */
+ .primary-button {
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+ }
 
  /* header section */
- header{
-  max-width: 1440px;
-  align-items: center;
- }
+ 
  nav{
   display: flex;
   justify-content: space-between;
@@ -74,56 +85,57 @@ span{
 }
 
 /* banner section */
-.banner-container{
-  background-image: url(../images/Group\ 14.png);
-  background-repeat: no-repeat;
-  background-size: 52%;
+.header-container {
+  padding: 0 120px;
   display: flex;
-
-}
-.banner-contant, .banner-img{
   justify-content: space-between;
   align-items: center;
-  margin: 0 100px;
 }
-.banner-img-style{
-  width: 50%;
-  align-items: center;
-  
-}
-.banner-icon{
-  width: 24px;
-  height: 24px;
-}
-.banner-contant-title{
-  color: #0B0223;
-  text-align: center;
-  font-size: 38px;
-  font-weight: 400;
-  text-transform: uppercase;
-  
-}
-.banner-contant{
- 
- 
+.header-img {
+  width: 619px;
+  height: 581px;
 }
 
-.banner-contant-sub-title{
-  text-align: center;
-  font-size: 75px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+.short-from {
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
 }
-.banner-img{
 
+.header-title {
+    color: #0b0223;
+  
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive media query*/
+
 /* mobile device */
 
 
@@ -139,3 +151,14 @@ span{
     margin-top: 20px;
   }
 }
+
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width : 960px) {
+  
+}
+
+nav{
+  flex-direction: column;
+}
+ 

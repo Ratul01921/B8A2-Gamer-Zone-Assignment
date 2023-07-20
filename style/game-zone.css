@@ -116,6 +116,96 @@ span{
     text-transform: uppercase;
     line-height: 0; 
 }
+/*  we are gammer section */
+
+.gammer-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.gammer-container img {
+  width: 700px;
+  height: 489px;
+  flex-shrink: 0;
+}
+.gammer-container h1 {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.gammer-container p {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.gammer-container h6 {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.know-more-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* video section style */
+.video-container {
+  padding: 0 120px;
+}
+.video-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.video-text-style {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+/* .video-card {
+  
+} */
+.video-card img {
+  width: 342px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+.video-card p {
+  width: 342px;
+}
 
 
 
@@ -140,7 +230,8 @@ span{
 
 
 @media screen and (max-width:576px) {
-  nav{
+  nav,
+  .header-container{
     flex-direction: column;
   }
   .nav-about{
@@ -150,15 +241,20 @@ span{
   .nav-about li{
     margin-top: 20px;
   }
+  .primary-button{
+    align-items: center;
+  }
 }
 
 
 /* medium device */
 @media screen and (min-width:576px) and (max-width : 960px) {
+  nav,
+.header-container{
+  flex-direction: column;
+}
   
 }
 
-nav{
-  flex-direction: column;
-}
+
  
